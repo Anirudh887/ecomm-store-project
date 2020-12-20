@@ -8,7 +8,7 @@ html {
 	--secondary-col: #3399ff;
 	--secondary-alt: #99ccff;
   --secondary-on: #000000;
-  --bg-col: #101a44;
+  --bg-col: #7680b9;
   --pad-and-gap: 1em;
 	/* etc, etc... */
 }
@@ -23,8 +23,12 @@ body{
 }
 
 .filters{
-  background-color: rgb(30, 146, 241);
+  background-color: rgb(0, 0, 0);
   border-radius: 20px;
+}
+
+.product{
+  background-color: #101a44;
 }
 
 .results{
