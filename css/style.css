@@ -12,12 +12,23 @@ html {
   --pad-and-gap: 1em;
 	/* etc, etc... */
 }
-
+a {
+  color: hotpink;
+}
 body{
     font-family: 'Poppins', 'Arial', sans-serif;
     line-height: 1;
     background-color: var(--bg-col);
     color: var(--primary-on) ;
+}
+
+.filters{
+  background-color: rgb(30, 146, 241);
+  border-radius: 20px;
+}
+
+.results{
+  background-color: rgb(59, 9, 82);
 }
 
 .products, .page-header, .page-footer{
@@ -88,6 +99,18 @@ body{
   grid-column-end: span 4;
 }
 
+.filters > h2{
+  padding-top: calc(var(--pad-and-gap) / 2);
+  padding-left: var(--pad-and-gap);
+}
+
+.filters{
+  padding-bottom: calc(var(--pad-and-gap) / 1.5);
+}
+
+.subheading{
+  padding-left: var(--pad-and-gap);
+}
 
 @media screen and (min-width: 40em) {
   .products{
@@ -100,6 +123,11 @@ body{
   .heading, .pagination{
     grid-column-start: 1;
     grid-column-end: span 2;
+  }
+
+  .results{
+    padding: 0 var(--pad-and-gap);
+    margin-top: var(--pad-and-gap);
   }
 }
 
