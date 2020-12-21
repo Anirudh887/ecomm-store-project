@@ -131,6 +131,9 @@ body{
   grid-row-end: 3;
   margin: var(--pad-and-gap) var(--pad-and-gap) 0 var(--pad-and-gap);
 }
+.search-label{
+  color:black;
+}
 
 .search-box{
   position: relative;
@@ -239,6 +242,14 @@ body{
   padding: 16px 32px;
 }
 
+.social{
+  padding-bottom: var(--pad-and-gap);
+}
+
+.social > li, .legal > li{
+  padding-left: var(--pad-and-gap);
+}
+
 
 /*-----------------Radio Button-------------------*/
 @keyframes pulse {
@@ -248,7 +259,7 @@ body{
 }
 
 .radio {
-  color: #798188;
+  color: #ffffff;
   cursor: pointer;
   margin-left: .5em;
   display: inline-block;
@@ -264,7 +275,7 @@ body{
   height: 1.5em;
   margin-right: .5em;
   border-radius: 3em;
-  background: #e1e2e2;
+  background: #dde0e0;
   vertical-align: top;
   display: inline-block;
 }
@@ -276,7 +287,7 @@ body{
   margin: .4em;
   border-radius: 3em;
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.932);
+  background-color: rgba(255, 10, 10, 0.932);
 }
 
 .radio:hover span:before {
@@ -285,6 +296,7 @@ body{
 
 input[type="radio"]:checked + .radio {
   color: #f8f8f8;
+  font-weight: bold;
 }
 
 input[type="radio"]:checked + .radio span:before {
@@ -318,11 +330,13 @@ input[type="radio"]:checked + .radio span:before {
 .fav{
   background-color: #ff3366;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .addcart{
   background-color: #00ff2a;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 40em) {
@@ -373,7 +387,7 @@ input[type="radio"]:checked + .radio span:before {
     display: flex;
   }
   .submenu > li, .menu > li{
-    padding-right: 5px;
+    padding-right: var(--pad-and-gap);
   }
   .products{
     display: block;
