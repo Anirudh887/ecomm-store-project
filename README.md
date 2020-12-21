@@ -1,6 +1,8 @@
-# Web Design & Development 1
-## E-Comm Webstore: PART 2
+# E-Comm Webstore
+## : PART 1
 
+
+## : PART 2
 ### Changes
 
 - Added Buy Now Hover Effect

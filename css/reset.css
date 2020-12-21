@@ -26,11 +26,11 @@ ul, ol, dl {
 li > ul, li > ol {
 	padding-left: 2.5em;
 }
-/*
+
 input, button {
 	margin: 0;
 	font: inherit;
-} */
+}
 /*
 fieldset {
 	display: flex;

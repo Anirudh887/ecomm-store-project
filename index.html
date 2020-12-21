@@ -1,74 +1,76 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wacky Tees</title>
-    <meta name="description" content="A site to wacky tshirts that make you stand out">
-    <meta name="author" content="Anirudh Singh">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js"></script>
-  </head>
-  <body>
-    <header class="page-header">
-      <a href="index.html" class="logo"><img style="width: 66px;height: 66px;" src="img/logo.svg"></a>
 
-      <!-- Navigation menu and toggle button (non-functional) -->
-      <button type="button" class="nav-toggle">
-        <!-- <span class="material-icons">menu</span> -->
-        <img class="svg" src="img/svgs/menu-open(bars).svg">
-      </button>
-      <nav aria-label="Primary" class="navigation">
-        <ul class="menu">
-          <li><a href="#">Shop</a>
-            <ul class="submenu">
-              <li><a href="#">Long Line Tees</a></li>
-              <li><a href="#">Tie and Die</a></li>
-              <li><a href="#">Pocket Tees</a></li>
-            </ul>
-          </li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wacky Tees</title>
+  <meta name="description" content="A site to wacky tshirts that make you stand out">
+  <meta name="author" content="Anirudh Singh">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+</head>
 
-      <!-- Search for a product (non-functional) -->
-      <form class="search">
-        <!-- <label>Search
+<body>
+  <header class="page-header">
+    <a href="index.html" class="logo"><img style="width: 66px;height: 66px;" src="img/logo.svg"></a>
+
+    <!-- Navigation menu and toggle button (non-functional) -->
+    <button type="button" class="nav-toggle">
+      <!-- <span class="material-icons">menu</span> -->
+      <img class="svg" src="img/svgs/menu-open(bars).svg">
+    </button>
+    <nav aria-label="Primary" class="navigation">
+      <ul class="menu">
+        <li><a href="#">Shop</a>
+          <ul class="submenu">
+            <li><a href="#">Long Line Tees</a></li>
+            <li><a href="#">Tie and Die</a></li>
+            <li><a href="#">Pocket Tees</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Search for a product (non-functional) -->
+    <form class="search">
+      <!-- <label>Search
           <input type="search" name="find" id="find">
         </label>
         <button type="button"><span class="material-icons">search</span></button> -->
-        <div class="search-box">
-          <input class="search-txt" type="text" name="" placeholder="Type to Search">
-          <a href="#" class="search-btn"><img class="svg" src="img/svgs/search.svg">
-            <!-- <i class="fas fa-search"></i> -->
-          </a>
-        </div>
-      </form>
+      <div class="search-box">
+        <input class="search-txt" type="text" name="" placeholder="Type to Search">
+        <a href="#" class="search-btn"><img class="svg" src="img/svgs/search.svg">
+          <!-- <i class="fas fa-search"></i> -->
+        </a>
+      </div>
+    </form>
 
-      <!-- Additional links -->
-      <ul class="your-products">
-        <!-- <li><a href="#"><span class="material-icons" aria-label="Favourites">favorite_border</span></a></li>
+    <!-- Additional links -->
+    <ul class="your-products">
+      <!-- <li><a href="#"><span class="material-icons" aria-label="Favourites">favorite_border</span></a></li>
         <li><a href="#"><span class="material-icons" aria-label="Items in your cart">shopping_cart</span></a></li> -->
-        <li><a href="#"><img class="svg" src="img/svgs/heart-pink.svg"></a></li>
-        <li><a href="#"><img class="svg" src="img/svgs/cart_pink.svg"></a></li>
-      </ul>
+      <li><a href="#"><img class="svg" src="img/svgs/heart-pink.svg"></a></li>
+      <li><a href="#"><img class="svg" src="img/svgs/cart_pink.svg"></a></li>
+    </ul>
+  </header>
+
+  <main class="products">
+    <header class="heading">
+      <h1>End of Reason Sale</h1>
     </header>
 
-    <main class="products">
-      <header class="heading">
-        <h1>Sale on Raglan Tees</h1>
-      </header>
-
-      <!-- Filtering product form -->
-      <form class="filters">
-        <h2>Filters 
-          <span class="filterplus" onclick="collapse()">+</span>
-          <span class="filterminus" onclick="collapse()">-</span>
-        </h2>
-        <div class="collapse">
+    <!-- Filtering product form -->
+    <form class="filters">
+      <h2>Filters
+        <span class="filterplus" onclick="collapse()">+</span>
+        <span class="filterminus" onclick="collapse()">-</span>
+      </h2>
+      <div class="collapse">
         <div class="filter-options">
           <fieldset>
             <legend>Colour</legend>
@@ -96,25 +98,41 @@
               <li>
                 <input type="radio" name="rating" value="4" id="aboveFour">
                 <label for="aboveFour">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span>
+                  <img class="svg" src="img/svgs/star.svg">
+                  <img class="svg" src="img/svgs/star.svg">
+                  <img class="svg" src="img/svgs/star.svg">
+                  <img class="svg" src="img/svgs/star.svg">
+                  <img class="svg" src="img/svgs/star_empty.svg">
                 </label>
               </li>
               <li>
                 <input type="radio" name="rating" value="3" id="aboveThree">
                 <label for="aboveThree">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
+                  <img class="svg" src="img/svgs/star.svg">
+                  <img class="svg" src="img/svgs/star.svg">
+                  <img class="svg" src="img/svgs/star.svg">
+                  <img class="svg" src="img/svgs/star_empty.svg">
+                  <img class="svg" src="img/svgs/star_empty.svg">
                 </label>
               </li>
               <li>
                 <input type="radio" name="rating" value="2" id="aboveTwo">
                 <label for="aboveTwo">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
+                  <img class="svg" src="img/svgs/star.svg">
+                  <img class="svg" src="img/svgs/star.svg">
+                  <img class="svg" src="img/svgs/star_empty.svg">
+                  <img class="svg" src="img/svgs/star_empty.svg">
+                  <img class="svg" src="img/svgs/star_empty.svg">
                 </label>
               </li>
               <li>
                 <input type="radio" name="rating" value="1" id="aboveOne">
                 <label for="aboveOne">
-                  <span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
+                  <img class="svg" src="img/svgs/star.svg">
+                  <img class="svg" src="img/svgs/star_empty.svg">
+                  <img class="svg" src="img/svgs/star_empty.svg">
+                  <img class="svg" src="img/svgs/star_empty.svg">
+                  <img class="svg" src="img/svgs/star_empty.svg">
                 </label>
               </li>
             </ol>
@@ -130,291 +148,395 @@
           </select>
         </fieldset>
       </div>
-      </form>
+    </form>
 
-      <section class="results">
-        <h2 class="subheading">Results</h2>
+    <section class="results">
+      <h2 class="subheading">Results</h2>
 
-        <!-- Product 1 -->
-        <article class="product">
-          <header>
-            <div class="image-container">
-              <img src="img/products/p1.png" alt="Product Image">
-              <div class="overlay">
-                <div class="text">Buy now</div>
-              </div>
+      <!-- Product 1 -->
+      <article class="product">
+        <header class="headerspace">
+          <div class="image-container">
+            <img src="img/products/p1.png" alt="Tie and Dye Tee">
+            <div class="overlay">
+              <div class="text">Buy now</div>
             </div>
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-            </dl>
-            <a href="#">see more</a>
-          </header>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-          </form>
-          <footer>
-            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-            <button type="button"><span class="material-icons">favorite</span></button>
-          </footer>
-        </article>
+          </div>
+          <h3 class="product-name">Navy Tie and Die</h3>
+          <data value="39"> <ins>$39.00</ins></data>
+          <p>Handcrafted tie and dye pure cotton Tee.</p>
+          <dl class="ratings">
+            <dt>Rating</dt>
+            <dd>4.5
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star_half.svg">
+          </dl>
+          <a href="#" class="more">see more<img class="svg" src="img/svgs/see-more.svg"></a>
+        </header>
+        <form>
+          <fieldset>
+            <legend>Colours</legend>
+            <ul>
+              <!-- <li><label><input type="radio" name="colour" value="r"> Red</label></li>
+              <li><label><input type="radio" name="colour" value="w"> White</label></li>
+              <li><label><input type="radio" name="colour" value="b"> Blue</label></li> -->
+              <input name="colour" id="r1" value="r" checked="" hidden="" type="radio">
+              <label for="r1" class="radio"><span></span>Red</label>
+              <input name="colour" id="r2" value="w" hidden="" type="radio">
+              <label for="r2" class="radio"><span></span>White</label>
+              <input name="colour" id="r3" value="b" hidden="" type="radio">
+              <label for="r3" class="radio"><span></span>Blue</label>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Sizes</legend>
+            <ol>
+              <!-- <li><label><input type="radio" name="size" value="m"> M</label></li>
+              <li><label><input type="radio" name="size" value="l"> L</label></li>
+              <li><label><input type="radio" name="size" value="xl"> XL</label></li> -->
+              <input name="size" id="r4" value="m" checked="" hidden="" type="radio">
+              <label for="r4" class="radio"><span></span>M</label>
+              <input name="size" id="r5" value="l" hidden="" type="radio">
+              <label for="r5" class="radio"><span></span>L</label>
+              <input name="size" id="r6" value="xl" hidden="" type="radio">
+              <label for="r6" class="radio"><span></span>XL</label>
+            </ol>
+          </fieldset>
+        </form>
+        <footer class="footerspace">
+          <button type="button" class="addcart"><img class="svg" src="img/svgs/cart_add_black.svg"> Add to Cart</button>
+          <button type="button" class="fav"><img class="svg" src="img/svgs/heart-pink.svg"> </button>
+        </footer>
+      </article>
 
-        <!-- Product 2 -->
-        <article class="product">
-          <header>
-            <div class="image-container">
-              <img src="img/products/p2.png" alt="Product Image">
-              <div class="overlay">
-                <div class="text">Buy now</div>
-              </div>
+      <!-- Product 2 -->
+      <article class="product">
+        <header class="headerspace">
+          <div class="image-container">
+            <img src="img/products/p2.png" alt="Longline Tee">
+            <div class="overlay">
+              <div class="text">Buy now</div>
             </div>
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-            </dl>
-            <a href="#">see more</a>
-          </header>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-          </form>
-          <footer>
-            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-            <button type="button"><span class="material-icons">favorite</span></button>
-          </footer>
-        </article>
+          </div>
+          <h3 class="product-name">Surf and Turf</h3>
+          <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+          <p>Pure cottomn printed Tee.</p>
+          <dl class="ratings">
+            <dt>Rating</dt>
+            <dd>4.0
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star_empty.svg">
+          </dl>
+          <a href="#" class="more">see more<img class="svg" src="img/svgs/see-more.svg"></a>
+        </header>
+        <form>
+          <fieldset>
+            <legend>Colours</legend>
+            <ul>
+              <!-- <li><label><input type="radio" name="colour" value="r"> Red</label></li>
+              <li><label><input type="radio" name="colour" value="w"> White</label></li>
+              <li><label><input type="radio" name="colour" value="b"> Blue</label></li> -->
+              <input name="colour" id="r7" value="r" checked="" hidden="" type="radio">
+              <label for="r7" class="radio"><span></span>Red</label>
+              <input name="colour" id="r8" value="w" hidden="" type="radio">
+              <label for="r8" class="radio"><span></span>White</label>
+              <input name="colour" id="r9" value="b" hidden="" type="radio">
+              <label for="r9" class="radio"><span></span>Blue</label>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Sizes</legend>
+            <ol>
+              <!-- <li><label><input type="radio" name="size" value="m"> M</label></li>
+              <li><label><input type="radio" name="size" value="l"> L</label></li>
+              <li><label><input type="radio" name="size" value="xl"> XL</label></li> -->
+              <input name="size" id="r10" value="m" checked="" hidden="" type="radio">
+              <label for="r10" class="radio"><span></span>M</label>
+              <input name="size" id="r11" value="l" hidden="" type="radio">
+              <label for="r11" class="radio"><span></span>L</label>
+              <input name="size" id="r12" value="xl" hidden="" type="radio">
+              <label for="r12" class="radio"><span></span>XL</label>
+            </ol>
+          </fieldset>
+        </form>
+        <footer class="footerspace">
+          <button type="button" class="addcart"><img class="svg" src="img/svgs/cart_add_black.svg"> Add to Cart</button>
+          <button type="button" class="fav"><img class="svg" src="img/svgs/heart-pink.svg"> </button>
+        </footer>
+      </article>
 
-        <!-- Product 3 -->
-        <article class="product">
-          <header>
-            <div class="image-container">
-              <img src="img/products/p3.png" alt="Product Image">
-              <div class="overlay">
-                <div class="text">Buy now</div>
-              </div>
+      <!-- Product 3 -->
+      <article class="product">
+        <header class="headerspace">
+          <div class="image-container">
+            <img src="img/products/p3.png" alt="Longline Tee">
+            <div class="overlay">
+              <div class="text">Buy now</div>
             </div>
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-            </dl>
-            <a href="#">see more</a>
-          </header>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-          </form>
-          <footer>
-            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-            <button type="button"><span class="material-icons">favorite</span></button>
-          </footer>
-        </article>
-  
-        <!-- Product 4 -->
-        <article class="product">
-          <header>
-            <div class="image-container">
-              <img src="img/products/p4.png" alt="Product Image">
-              <div class="overlay">
-                <div class="text">Buy now</div>
-              </div>
+          </div>
+          <h3 class="product-name">Long Line Tee</h3>
+          <data value="39"><del>$70.00</del> <ins>$49.00</ins></data>
+          <p>Long Line 100% cotton Tee.</p>
+          <dl class="ratings">
+            <dt>Rating</dt>
+            <dd>5
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star.svg">
+          </dl>
+          <a href="#" class="more">see more<img class="svg" src="img/svgs/see-more.svg"></a>
+        </header>
+        <form>
+          <fieldset>
+            <legend>Colours</legend>
+            <ul>
+              <!-- <li><label><input type="radio" name="colour" value="r"> Red</label></li>
+              <li><label><input type="radio" name="colour" value="w"> White</label></li>
+              <li><label><input type="radio" name="colour" value="b"> Blue</label></li> -->
+              <input name="colour" id="r13" value="r" checked="" hidden="" type="radio">
+              <label for="r13" class="radio"><span></span>Red</label>
+              <input name="colour" id="r14" value="w" hidden="" type="radio">
+              <label for="r14" class="radio"><span></span>White</label>
+              <input name="colour" id="r15" value="b" hidden="" type="radio">
+              <label for="r15" class="radio"><span></span>Blue</label>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Sizes</legend>
+            <ol>
+              <!-- <li><label><input type="radio" name="size" value="m"> M</label></li>
+              <li><label><input type="radio" name="size" value="l"> L</label></li>
+              <li><label><input type="radio" name="size" value="xl"> XL</label></li> -->
+              <input name="size" id="r22" value="m" checked="" hidden="" type="radio">
+              <label for="r22" class="radio"><span></span>M</label>
+              <input name="size" id="r23" value="l" hidden="" type="radio">
+              <label for="r23" class="radio"><span></span>L</label>
+              <input name="size" id="r24" value="xl" hidden="" type="radio">
+              <label for="r24" class="radio"><span></span>XL</label>
+            </ol>
+          </fieldset>
+        </form>
+        <footer class="footerspace">
+          <button type="button" class="addcart"><img class="svg" src="img/svgs/cart_add_black.svg"> Add to Cart</button>
+          <button type="button" class="fav"><img class="svg" src="img/svgs/heart-pink.svg"> </button>
+        </footer>
+      </article>
+
+      <!-- Product 4 -->
+      <article class="product">
+        <header class="headerspace">
+          <div class="image-container">
+            <img src="img/products/p4.png" alt="Hiking Tee">
+            <div class="overlay">
+              <div class="text">Buy now</div>
             </div>
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-            </dl>
-            <a href="#">see more</a>
-          </header>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-          </form>
-          <footer>
-            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-            <button type="button"><span class="material-icons">favorite</span></button>
-          </footer>
-        </article>
+          </div>
+          <h3 class="product-name">Camping and Hiking Print Tee</h3>
+          <data value="39"><del>$30.00</del> <ins>$25.00</ins></data>
+          <p>Hiking Print Tee</p>
+          <dl class="ratings">
+            <dt>Rating</dt>
+            <dd>3.5
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star_half.svg">
+              <img class="svg" src="img/svgs/star_empty.svg">
 
-        <!-- Product 5 -->
-        <article class="product">
-          <header>
-            <div class="image-container">
-              <img src="img/products/p5.png" alt="Product Image">
-              <div class="overlay">
-                <div class="text">Buy now</div>
-              </div>
+          </dl>
+          <a href="#" class="more">see more<img class="svg" src="img/svgs/see-more.svg"></a>
+        </header>
+        <form>
+          <fieldset>
+            <legend>Colours</legend>
+            <ul>
+              <!-- <li><label><input type="radio" name="colour" value="r"> Red</label></li>
+              <li><label><input type="radio" name="colour" value="w"> White</label></li>
+              <li><label><input type="radio" name="colour" value="b"> Blue</label></li> -->
+              <input name="colour" id="r16" value="r" checked="" hidden="" type="radio">
+              <label for="r16" class="radio"><span></span>Red</label>
+              <input name="colour" id="r17" value="w" hidden="" type="radio">
+              <label for="r17" class="radio"><span></span>White</label>
+              <input name="colour" id="r18" value="b" hidden="" type="radio">
+              <label for="r18" class="radio"><span></span>Blue</label>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Sizes</legend>
+            <ol>
+              <!-- <li><label><input type="radio" name="size" value="m"> M</label></li>
+              <li><label><input type="radio" name="size" value="l"> L</label></li>
+              <li><label><input type="radio" name="size" value="xl"> XL</label></li> -->
+              <input name="size" id="r19" value="m" checked="" hidden="" type="radio">
+              <label for="r19" class="radio"><span></span>M</label>
+              <input name="size" id="r20" value="l" hidden="" type="radio">
+              <label for="r20" class="radio"><span></span>L</label>
+              <input name="size" id="r21" value="xl" hidden="" type="radio">
+              <label for="r21" class="radio"><span></span>XL</label>
+            </ol>
+          </fieldset>
+        </form>
+        <footer class="footerspace">
+          <button type="button" class="addcart"><img class="svg" src="img/svgs/cart_add_black.svg"> Add to Cart</button>
+          <button type="button" class="fav"><img class="svg" src="img/svgs/heart-pink.svg"> </button>
+        </footer>
+      </article>
+
+      <!-- Product 5 -->
+      <article class="product">
+        <header class="headerspace">
+          <div class="image-container">
+            <img src="img/products/p5.png" alt="Flamingo Tee">
+            <div class="overlay">
+              <div class="text">Buy now</div>
             </div>
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-            </dl>
-            <a href="#">see more</a>
-          </header>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-          </form>
-          <footer>
-            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-            <button type="button"><span class="material-icons">favorite</span></button>
-          </footer>
-        </article>
+          </div>
+          <h3 class="product-name">Flamingo Polyester Tee</h3>
+          <data value="40"> <ins>$40.00</ins></data>
+          <p>Polyester and Cotton mix printed Tee</p>
+          <dl class="ratings">
+            <dt>Rating</dt>
+            <dd>4.5
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star_half.svg">
+          </dl>
+          <a href="#" class="more">see more<img class="svg" src="img/svgs/see-more.svg"></a>
+        </header>
+        <form>
+          <fieldset>
+            <legend>Colours</legend>
+            <ul>
+              <!-- <li><label><input type="radio" name="colour" value="r"> Red</label></li>
+              <li><label><input type="radio" name="colour" value="w"> White</label></li>
+              <li><label><input type="radio" name="colour" value="b"> Blue</label></li> -->
+              <input name="colour" id="r25" value="r" checked="" hidden="" type="radio">
+              <label for="r25" class="radio"><span></span>Red</label>
+              <input name="colour" id="r26" value="w" hidden="" type="radio">
+              <label for="r26" class="radio"><span></span>White</label>
+              <input name="colour" id="r27" value="b" hidden="" type="radio">
+              <label for="r27" class="radio"><span></span>Blue</label>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Sizes</legend>
+            <ol>
+              <!-- <li><label><input type="radio" name="size" value="m"> M</label></li>
+              <li><label><input type="radio" name="size" value="l"> L</label></li>
+              <li><label><input type="radio" name="size" value="xl"> XL</label></li> -->
+              <input name="size" id="r28" value="m" checked="" hidden="" type="radio">
+              <label for="r28" class="radio"><span></span>M</label>
+              <input name="size" id="r29" value="l" hidden="" type="radio">
+              <label for="r29" class="radio"><span></span>L</label>
+              <input name="size" id="r30" value="xl" hidden="" type="radio">
+              <label for="r30" class="radio"><span></span>XL</label>
+            </ol>
+          </fieldset>
+        </form>
+        <footer class="footerspace">
+          <button type="button" class="addcart"><img class="svg" src="img/svgs/cart_add_black.svg"> Add to Cart</button>
+          <button type="button" class="fav"><img class="svg" src="img/svgs/heart-pink.svg"> </button>
+        </footer>
+      </article>
 
-        <!-- Product 6 -->
-        <article class="product">
-          <header>
-            <div class="image-container">
-              <img src="img/products/p6.png" alt="Product Image">
-              <div class="overlay">
-                <div class="text">Buy now</div>
-              </div>
+      <!-- Product 6 -->
+      <article class="product">
+        <header class="headerspace">
+          <div class="image-container">
+            <img src="img/products/p6.png" alt="The Ring Creep Tee">
+            <div class="overlay">
+              <div class="text">Buy now</div>
             </div>
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-            </dl>
-            <a href="#">see more</a>
-          </header>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-          </form>
-          <footer>
-            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-            <button type="button"><span class="material-icons">favorite</span></button>
-          </footer>
-        </article>
-      </section>
+          </div>
+          <h3 class="product-name">The Ring Creepy Tee</h3>
+          <data value="39"> <ins>$39.00</ins></data>
+          <p>Cotton Tee for all the horror fans</p>
+          <dl class="ratings">
+            <dt>Rating</dt>
+            <dd>4.0
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star.svg">
+              <img class="svg" src="img/svgs/star_empty.svg">
+          </dl>
+          <a href="#" class="more">see more<img class="svg" src="img/svgs/see-more.svg"></a>
+        </header>
+        <form>
+          <fieldset>
+            <legend>Colours</legend>
+            <ul>
+              <!-- <li><label><input type="radio" name="colour" value="r"> Red</label></li>
+              <li><label><input type="radio" name="colour" value="w"> White</label></li>
+              <li><label><input type="radio" name="colour" value="b"> Blue</label></li> -->
+              <input name="colour" id="r31" value="r" checked="" hidden="" type="radio">
+              <label for="r31" class="radio"><span></span>Red</label>
+              <input name="colour" id="r32" value="w" hidden="" type="radio">
+              <label for="r32" class="radio"><span></span>White</label>
+              <input name="colour" id="r33" value="b" hidden="" type="radio">
+              <label for="r33" class="radio"><span></span>Blue</label>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Sizes</legend>
+            <ol>
+              <!-- <li><label><input type="radio" name="size" value="m"> M</label></li>
+              <li><label><input type="radio" name="size" value="l"> L</label></li>
+              <li><label><input type="radio" name="size" value="xl"> XL</label></li> -->
+              <input name="size" id="r34" value="m" checked="" hidden="" type="radio">
+              <label for="r34" class="radio"><span></span>M</label>
+              <input name="size" id="r35" value="l" hidden="" type="radio">
+              <label for="r35" class="radio"><span></span>L</label>
+              <input name="size" id="r36" value="xl" hidden="" type="radio">
+              <label for="r36" class="radio"><span></span>XL</label>
+            </ol>
+          </fieldset>
+        </form>
+        <footer class="footerspace">
+          <button type="button" class="addcart"><img class="svg" src="img/svgs/cart_add_black.svg"> Add to Cart</button>
+          <button type="button" class="fav"><img class="svg" src="img/svgs/heart-pink.svg"> </button>
+        </footer>
+      </article>
+    </section>
 
-      <nav aria-label="Pagination" class="pagination">
-        <p>1-6 of 23 products found</p>
-        <ol class="pages">
-          <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
-          <li><a href="#" aria-label="Page 2">2</a></li>
-          <li><a href="#" aria-label="Page 3">3</a></li>
-          <li><a href="#" aria-label="Page 4">4</a></li>
-          <li><a href="#" aria-label="Page 5">5</a></li>
-        </ol>
-      </nav>
-    </main>
+    <nav aria-label="Pagination" class="pagination">
+      <p>1-6 of 23 products found</p>
+      <ol class="pages">
+        <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
+        <li><a href="#" aria-label="Page 2">2</a></li>
+        <li><a href="#" aria-label="Page 3">3</a></li>
+        <li><a href="#" aria-label="Page 4">4</a></li>
+        <li><a href="#" aria-label="Page 5">5</a></li>
+      </ol>
+    </nav>
+  </main>
 
-    <footer class="page-footer">
-      <ul class="social">
-        <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
-        <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
-        <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
+  <footer class="page-footer">
+    <ul class="social">
+      <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
+      <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
+      <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
+    </ul>
+    <nav aria-label="Legal">
+      <ul class="legal">
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Accessibility Policy</a></li>
       </ul>
-      <nav aria-label="Legal">
-        <ul class="legal">
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Accessibility Policy</a></li>
-        </ul>
-      </nav>
-      <p class="copyright">&copy; Copyright, 1991.</p>
-    </footer>
+    </nav>
+    <p class="copyright">Wacky Tees&copy; Copyright, 2020.</p>
+  </footer>
 
-  </body>
+</body>
+
 </html>
