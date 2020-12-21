@@ -1,6 +1,6 @@
-/* Note there a few "reset" styles given in reset.css. Review those before you begin */
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-
+/* @import url('https://fonts.googleapis.com/css?family=Poppins'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
 html {
 	--primary-col: #ff3366;    /* main colour */
 	--primary-alt: #ff6699;    /* variant */
@@ -12,13 +12,18 @@ html {
   --pad-and-gap: 1em;
 	/* etc, etc... */
 }
+
+h1,h2,h3,h4,h5{
+  font-family: 'Capriola', 'Arial', sans-serif;
+}
+
 a {
   color: hotpink;
 }
 body{
     font-family: 'Poppins', 'Arial', sans-serif;
     line-height: 1;
-    background-color: var(--bg-col);
+    background-color: rgb(29, 28, 28);
     color: var(--primary-on) ;
 }
 
@@ -35,7 +40,13 @@ body{
   background-color: rgb(59, 9, 82);
 }
 
-.products, .page-header, .page-footer{
+.page-footer{
+  background-color: rgb(0, 0, 0);
+  padding:var(--pad-and-gap) ;
+  margin-top:var(--pad-and-gap);
+}
+
+.products, .page-header{
     padding: 0 var(--pad-and-gap);
 }
 
@@ -70,6 +81,8 @@ body{
 .page-header{
   display: grid;
   grid-template-columns: auto 1fr auto auto;
+  background-color: #101a44;
+  padding: var(--pad-and-gap);
 }
 
 .filter-list{
@@ -112,16 +125,61 @@ body{
   padding-bottom: calc(var(--pad-and-gap) / 1.5);
 }
 
-.subheading{
-  padding-left: var(--pad-and-gap);
+.filterplus{
+  float: right;
+  padding-right: var(--pad-and-gap);
+  cursor: pointer;
+  display: none;
 }
+.filterminus{
+  float: right;
+  padding-right: var(--pad-and-gap);
+  cursor: pointer;
+}
+
+.collapse{
+  display: block;
+}
+.subheading{
+  padding-left: calc(var(--pad-and-gap)/2);
+}
+
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  top: -1.5em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+}
+
+.image-container:hover img {
+  opacity: 0.3;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+
 
 @media screen and (min-width: 40em) {
   .products{
       display: grid;
       grid-template-columns: 15em auto;
       /* NOTE : grid-gap has been replaced by gap  */
-      grid-gap: var(--pad-and-gap); 
+      gap: var(--pad-and-gap); 
   }
 
   .heading, .pagination{

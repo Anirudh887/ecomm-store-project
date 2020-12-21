@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Headphone Zone</title>
-    <meta name="description" content="A site to buy all the latest headphones at the best prices">
+    <title>Wacky Tees</title>
+    <meta name="description" content="A site to wacky tshirts that make you stand out">
     <meta name="author" content="Anirudh Singh">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="logo">Hello World<!-- Site logo --></a>
+      <a href="index.html" class="logo"><img style="width: 50px" src="img/logo.svg"></a>
 
       <!-- Navigation menu and toggle button (non-functional) -->
       <button type="button" class="nav-toggle">
@@ -49,13 +50,16 @@
 
     <main class="products">
       <header class="heading">
-        <h1>Sale on [Category Name]</h1>
+        <h1>Sale on Raglan Tees</h1>
       </header>
 
       <!-- Filtering product form -->
       <form class="filters">
-        <h2>Filters</h2>
-
+        <h2>Filters 
+          <span class="filterplus" onclick="collapse()">+</span>
+          <span class="filterminus" onclick="collapse()">-</span>
+        </h2>
+        <div class="collapse">
         <div class="filter-options">
           <fieldset>
             <legend>Colour</legend>
@@ -107,6 +111,7 @@
             </ol>
           </fieldset>
         </div>
+
         <fieldset>
           <label for="sort">Show</label>
           <select name="sort" id="sort">
@@ -115,6 +120,7 @@
             <option value="newest">Newest releases</option>
           </select>
         </fieldset>
+      </div>
       </form>
 
       <section class="results">
@@ -123,7 +129,12 @@
         <!-- Product 1 -->
         <article class="product">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
+            <div class="image-container">
+              <img src="img/products/p1.png" alt="Product Image">
+              <div class="overlay">
+                <div class="text">Buy now</div>
+              </div>
+            </div>
             <h3>Product Name</h3>
             <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
             <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
@@ -160,7 +171,12 @@
         <!-- Product 2 -->
         <article class="product">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
+            <div class="image-container">
+              <img src="img/products/p2.png" alt="Product Image">
+              <div class="overlay">
+                <div class="text">Buy now</div>
+              </div>
+            </div>
             <h3>Product Name</h3>
             <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
             <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
@@ -197,7 +213,12 @@
         <!-- Product 3 -->
         <article class="product">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
+            <div class="image-container">
+              <img src="img/products/p3.png" alt="Product Image">
+              <div class="overlay">
+                <div class="text">Buy now</div>
+              </div>
+            </div>
             <h3>Product Name</h3>
             <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
             <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
@@ -234,7 +255,12 @@
         <!-- Product 4 -->
         <article class="product">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
+            <div class="image-container">
+              <img src="img/products/p4.png" alt="Product Image">
+              <div class="overlay">
+                <div class="text">Buy now</div>
+              </div>
+            </div>
             <h3>Product Name</h3>
             <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
             <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
@@ -271,7 +297,12 @@
         <!-- Product 5 -->
         <article class="product">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
+            <div class="image-container">
+              <img src="img/products/p5.png" alt="Product Image">
+              <div class="overlay">
+                <div class="text">Buy now</div>
+              </div>
+            </div>
             <h3>Product Name</h3>
             <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
             <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
@@ -308,7 +339,12 @@
         <!-- Product 6 -->
         <article class="product">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
+            <div class="image-container">
+              <img src="img/products/p6.png" alt="Product Image">
+              <div class="overlay">
+                <div class="text">Buy now</div>
+              </div>
+            </div>
             <h3>Product Name</h3>
             <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
             <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
