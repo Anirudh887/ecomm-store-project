@@ -13,19 +13,20 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="logo"><img style="width: 50px" src="img/logo.svg"></a>
+      <a href="index.html" class="logo"><img style="width: 66px;height: 66px;" src="img/logo.svg"></a>
 
       <!-- Navigation menu and toggle button (non-functional) -->
       <button type="button" class="nav-toggle">
-        <span class="material-icons">menu</span>
+        <!-- <span class="material-icons">menu</span> -->
+        <img class="svg" src="img/svgs/menu-open(bars).svg">
       </button>
       <nav aria-label="Primary" class="navigation">
         <ul class="menu">
           <li><a href="#">Shop</a>
             <ul class="submenu">
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
+              <li><a href="#">Long Line Tees</a></li>
+              <li><a href="#">Tie and Die</a></li>
+              <li><a href="#">Pocket Tees</a></li>
             </ul>
           </li>
           <li><a href="#">About</a></li>
@@ -35,16 +36,24 @@
 
       <!-- Search for a product (non-functional) -->
       <form class="search">
-        <label>Search
+        <!-- <label>Search
           <input type="search" name="find" id="find">
         </label>
-        <button type="button"><span class="material-icons">search</span></button>
+        <button type="button"><span class="material-icons">search</span></button> -->
+        <div class="search-box">
+          <input class="search-txt" type="text" name="" placeholder="Type to Search">
+          <a href="#" class="search-btn"><img class="svg" src="img/svgs/search.svg">
+            <!-- <i class="fas fa-search"></i> -->
+          </a>
+        </div>
       </form>
 
       <!-- Additional links -->
       <ul class="your-products">
-        <li><a href="#"><span class="material-icons" aria-label="Favourites">favorite_border</span></a></li>
-        <li><a href="#"><span class="material-icons" aria-label="Items in your cart">shopping_cart</span></a></li>
+        <!-- <li><a href="#"><span class="material-icons" aria-label="Favourites">favorite_border</span></a></li>
+        <li><a href="#"><span class="material-icons" aria-label="Items in your cart">shopping_cart</span></a></li> -->
+        <li><a href="#"><img class="svg" src="img/svgs/heart-pink.svg"></a></li>
+        <li><a href="#"><img class="svg" src="img/svgs/cart_pink.svg"></a></li>
       </ul>
     </header>
 
