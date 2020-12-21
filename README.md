@@ -5,6 +5,8 @@
   2. [Images](https://github.com/Anirudh887/ecomm-store-project/tree/master/img/products)
 
   3. [SVGs](https://github.com/Anirudh887/ecomm-store-project/tree/master/img/svgs)
+
+  4. [Form Components](https://raw.githubusercontent.com/Anirudh887/ecomm-store-project/master/part%201%20design/Form%20Components.svg)
 ---
 ## PART 2 (Implementation)
 ### Changes
