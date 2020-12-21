@@ -1,4 +1,4 @@
-# E-Comm Webstore
+# E-Comm Webstore (https://anirudh887.github.io/ecomm-store-project/)
 ## PART 1 (Design)
   1. [Style Guide PDF](https://github.com/Anirudh887/ecomm-store-project/blob/master/part%201%20design/1.%20Brand%20Identity%20(colors%2C%20fonts%2C%20logos).pdf)
 
