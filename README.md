@@ -1,8 +1,12 @@
 # E-Comm Webstore
-## : PART 1
+## PART 1 (Design)
+  1. [Style Guide PDF](https://github.com/Anirudh887/ecomm-store-project/blob/master/part%201%20design/1.%20Brand%20Identity%20(colors%2C%20fonts%2C%20logos).pdf)
 
+  2. [Images](https://github.com/Anirudh887/ecomm-store-project/tree/master/img/products)
 
-## : PART 2
+  3. [SVGs](https://github.com/Anirudh887/ecomm-store-project/tree/master/img/svgs)
+---
+## PART 2 (Implementation)
 ### Changes
 
 - Added Buy Now Hover Effect

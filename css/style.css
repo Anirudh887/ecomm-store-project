@@ -1,15 +1,16 @@
-/* @import url('https://fonts.googleapis.com/css?family=Poppins'); */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
 html {
-	--primary-col: #ff3366;    /* main colour */
-	--primary-alt: #ff6699;    /* variant */
+	--primary-col: #101a44;    /* main colour */
+	--primary-alt: rgb(59, 9, 82);;    /* variant */
 	--primary-on: #ffffff;     /* for text or icons */
 	--secondary-col: #3399ff;
 	--secondary-alt: #99ccff;
   --secondary-on: #000000;
   --bg-col: #7680b9;
   --pad-and-gap: 1em;
+  --dark:rgb(29, 28, 28);
+  --darker:rgb(0, 0, 0);
 	/* etc, etc... */
 }
 
@@ -20,10 +21,11 @@ h1,h2,h3,h4,h5{
 a {
   color: hotpink;
 }
+
 body{
     font-family: 'Poppins', 'Arial', sans-serif;
     line-height: 1;
-    background-color: rgb(29, 28, 28);
+    background-color: var(--dark);
     color: var(--primary-on) ;
 }
 
@@ -31,25 +33,24 @@ body{
   width: 25px;
 }
 
-
 .filters{
-  background-color: rgb(0, 0, 0);
+  background-color: var(--darker);
   border-radius: 20px;
 }
 
 .product{
-  background-color: #101a44;
+  background-color: var(--primary-col);
   padding: var(--pad-and-gap);
 }
 
 .results{
-  background-color: rgb(59, 9, 82);
+  background-color: var(--primary-alt);
   padding-bottom: var(--pad-and-gap);
   padding-top: var(--pad-and-gap);
 }
 
 .page-footer{
-  background-color: rgb(0, 0, 0);
+  background-color: var(--darker);
   padding:var(--pad-and-gap) ;
   margin-top:var(--pad-and-gap);
 }
@@ -238,8 +239,8 @@ body{
 .text {
   background-color: #4CAF50;
   color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+  font-size:  var(--pad-and-gap);
+  padding:  var(--pad-and-gap) calc( var(--pad-and-gap)*2);
 }
 
 .social{
@@ -249,7 +250,6 @@ body{
 .social > li, .legal > li{
   padding-left: var(--pad-and-gap);
 }
-
 
 /*-----------------Radio Button-------------------*/
 @keyframes pulse {
@@ -307,6 +307,7 @@ input[type="radio"]:checked + .radio span:before {
   animation:         pulse .25s;
 }
 /*------------------------------------*/
+
 .ratings{
   display: flex;
   align-items: flex-end;
@@ -339,6 +340,16 @@ input[type="radio"]:checked + .radio span:before {
   cursor: pointer;
 }
 
+.addcart:hover {
+  background-color: #00ff2aa1;
+  box-shadow: 0 2px #666;
+}
+
+.fav:hover {
+  background-color: #ff3366b7;
+  box-shadow: 0 2px #666;
+}
+
 @media screen and (min-width: 40em) {
   .products{
       display: grid;
@@ -357,7 +368,6 @@ input[type="radio"]:checked + .radio span:before {
     margin-top: var(--pad-and-gap);
   }
 }
-
 
 @media screen and (min-width: 77em) {
   .products{
